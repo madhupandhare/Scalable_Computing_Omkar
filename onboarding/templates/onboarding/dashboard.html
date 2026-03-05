@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Campus Starter Portal - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/onboarding/css/style.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container py-4">
+    <h1 class="h3 mb-4">Welcome to your dashboard</h1>
+
+    <div id="dashboardAlert"></div>
+
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h2 class="h5">Student Profile</h2>
+                    <ul class="list-group list-group-flush" id="studentProfile"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h2 class="h5">Country and Currency Info</h2>
+                    <div id="countryInfo"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="h5">Restaurant Explorer</h2>
+                    <form id="restaurantForm" class="row g-3 align-items-end">
+                        <div class="col-md-5">
+                            <label class="form-label">Cuisine</label>
+                            <input type="text" class="form-control" name="cuisine" placeholder="e.g., Indian" required>
+                        </div>
+                        <div class="col-md-5">
+                            <label class="form-label">Budget</label>
+                            <select class="form-select" name="budget" required>
+                                <option value="">Choose...</option>
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 d-grid">
+                            <button type="submit" class="btn btn-success">Find</button>
+                        </div>
+                    </form>
+                    <div class="row g-3 mt-2" id="restaurantResults"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="h5">Fresher Guidance</h2>
+                    <ul>
+                        <li>Use your university career portal and LinkedIn weekly for job leads.</li>
+                        <li>Track rent, transport, and utility costs in a monthly spreadsheet.</li>
+                        <li>Choose local grocery chains and buy essentials in batches to save money.</li>
+                        <li>Create a fixed weekly food and travel budget to avoid overspending.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/onboarding/js/dashboard.js"></script>
+</body>
+</html>

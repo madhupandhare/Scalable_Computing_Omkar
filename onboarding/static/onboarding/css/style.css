@@ -1,0 +1,7 @@
+.card {
+    border-radius: 0.75rem;
+}
+
+#restaurantResults .card {
+    min-height: 200px;
+}
